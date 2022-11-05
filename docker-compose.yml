@@ -11,7 +11,7 @@ services:
       - rt_db
 
   backend:
-    image: ghcr.io/russiatravel/backend:v1.0.0
+    image: ghcr.io/russiatravel/backend:v1.0.1
     env_file:
       - .env
     ports:
@@ -23,7 +23,7 @@ services:
       - rt_bot
 
   bot:
-    image: ghcr.io/russiatravel/tgbot:v1.0.0
+    image: ghcr.io/russiatravel/tgbot:v1.0.1
     env_file:
       - .env
     networks:
